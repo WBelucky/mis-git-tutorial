@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>みす Git チュートリアル</title>
+</head>
+
+<body>
+    <h1>これは2019/12/20のみすGit講座用のページです</h1>
+    <p>公序良俗に反しないような感じで, この辺に好きなものを追加していってくれ...</p>
+    <button id="do_not_push">絶対に押さないで</button>
+    <div class="links">
+        リンク
+        <ul>
+            <li>
+                <a href="https://misw.github.io/git/index.html">oguni君が作ってくれたGit講座の資料</a>
+            </li>
+            <li>
+                <a href="https://github.com/MISW/">みすのGitHub Organization</a>
+            </li>
+            <li>
+                <a href="https://misw.github.io/">みすのプロ研資料置き場</a>
+            </li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        const btn = document.getElementById('do_not_push')
+        console.log(btn)
+        if (btn) {
+            btn.addEventListener('click', (evt) => {
+                if (evt.isTrusted) {
+                    alert('あなたを絶対に押すなよボタンを押した罪で訴えます! 理由はもちろんおわかりですね! (Git講座, ご参加ありがとう御座います..)')
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>
